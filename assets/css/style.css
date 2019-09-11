@@ -1,0 +1,12 @@
+.jumbotron {
+    background-image: url("../image/Hogwarts-Express.jpg");
+    background-size: 450px;  
+    color: rgb(207, 159, 25);
+}
+
+.panel-title {
+    font-weight: bolder;
+}
+th {
+    font-weight: bold
+}
