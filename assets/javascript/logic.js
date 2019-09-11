@@ -76,10 +76,10 @@ $(document).ready(function () {
 
       
     },
-
-      //Handle the errors
+     //Handle the errors
       function (errorObject) {
         console.log("Errors handled: " + errorObject.code);
       });
+    
   
-  }); //end document ready 
+  });
