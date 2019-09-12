@@ -33,7 +33,11 @@ $(document).ready(function () {
         frequency: freq
       });
     });
-  
+    // remove train
+   $("#removeTrain").on("click", function (event) {
+     event.preventDefault();
+     $("#all-display").remove();
+   });
   
     // Firebase watcher + initial loader HINT: This code behaves similarly to .on("value")
     database.ref().on("child_added", function (childSnapshot) {
@@ -73,13 +77,14 @@ $(document).ready(function () {
       // Clear input fields
       $("#trainName, #destination, #firstTrain, #interval").val("");
       return false;
-
       
     },
      //Handle the errors
       function (errorObject) {
         console.log("Errors handled: " + errorObject.code);
-      });
-    
+      });      
+
   
   });
+ 
+  
